@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+   <head>
+   <script src="//connect.facebook.net/en_US/sdk.js"></script>
+     <meta charset="utf-8" />
+	 <title>Jogo De Oril </title>
+	 <link href="Css/oril_Css.css" rel="stylesheet" type="text/css">
+	 <link rel="shortcut icon" type="image/gif" href="imag/logo.png">
+   </head>
+   
+   <body background="imag/fun.jpg">
+   
+   <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '843844912395308',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<table align="center">
+<tr>
+<td><div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true"></td>
+</div>
+
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
+
+<td><a id="loginBtn">Login</a></td>
+<div id="response"></div>
+
+<script>
+function getUserData() {
+    FB.api('/me', function(response) {
+        document.getElementById('response').innerHTML = 'Hello ' + response.name;
+    });
+}
+ 
+window.fbAsyncInit = function() {
+    //SDK loaded, initialize it
+    FB.init({
+        appId      : '843844912395308',
+        xfbml      : true,
+        version    : 'v2.4'
+    });
+ 
+    //check user session and refresh it
+    FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+            //user is authorized
+            document.getElementById('loginBtn').style.display = 'none';
+            getUserData();
+        } else {
+            //user is not authorized
+        }
+    });
+};
+ 
+//load the JavaScript SDK
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ 
+//add event listener to login button
+document.getElementById('loginBtn').addEventListener('click', function() {
+    //do the login
+    FB.login(function(response) {
+        if (response.authResponse) {
+            //user just authorized your app
+            document.getElementById('loginBtn').style.display = 'none';
+            getUserData();
+        }
+    }, {scope: 'email,public_profile', return_scopes: true});
+}, false);
+
+
+
+
+/*invite friends */
+
+
+FB.init({
+appId:'843844912395308',
+cookie:true,
+status:true,
+xfbml:true
+});
+
+function FacebookInviteFriends()
+{
+FB.ui({
+method: 'apprequests',
+message: 'Your Message diaolog'
+});
+}
+
+
+if (top.location!= self.location)
+{
+top.location = self.location
+}
+</script>
+
+<div id="fb-root"></div>
+<td><p align="left"><a class="btninvit" onclick="FacebookInviteFriends();"> 
+Convidar Amigos
+</a></p></td>
+</tr>
+</table>
+   
+   <table style="border-collapse: collapse;" align="center" border="2" bordercolor="BLACK" cellpadding="0" cellspacing="0" height="600" width="1000">
+  <tbody><tr>
+  <td background="imag/PlanoA.jpg" bgcolor="#C2C3C4" height="90"><div align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr>
+            <td width="30%"><div align="center">
+<div align="center"></div>
+<div align="center"></div>
+<table style="border-collapse: collapse;" id="table1" border="0" cellpadding="0" cellspacing="0" width="350">
+
+<div id="Menu"  align="center">
+<ul>
+<p align="center"><span class="Jogar "><a href="orilcpu.html" Class="btn2">
+<li> JOGAR</li>
+<p align="center"></p><p align="center"><span class="regras">
+<a href="regras.html" Class="btn2">
+<li> REGRAS</li>
+
+
+</ul>    
+	
+	</tr>
+</tbody></table>
+
+	
+   </tr>
+        </tbody></table>
+		
+		 </div></td>
+  </tr>
+</tbody></table>
+
+		
+		 
+   </body>
+
+
+</html>

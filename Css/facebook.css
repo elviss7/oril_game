@@ -1,0 +1,22 @@
+.limitarbox {
+ width: 213px !important;
+ height: 400px !important;
+ overflow: hidden !important;
+ position: relative;
+}
+.fb-like-box {
+ background-color: #fff;
+ //background:url('');
+ margin-top: -98px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: -8px;
+ text-align: center
+}
+.fb-like {
+ margin-top: 5px;
+ margin-left: 4px;
+ margin-bottom: 10px;
+ text-align: left;
+ width: 100px;
+}

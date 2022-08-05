@@ -1,0 +1,190 @@
+﻿
+
+<html>
+
+<html>
+<head>
+<title>Oril - Cpu </title>
+<link href="Css/oril_Css.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/gif" href="imag/logo.png">
+<meta charset="utf-8" />
+
+
+
+<style>
+#teste{
+background-color: #FCC182;
+
+}
+</style>
+
+<style>
+#teste1{
+background-color: #FCC182;
+
+}
+</style>
+
+<style type="text/css">
+
+input.test {
+  left: 455px;
+  top:285;
+  
+}
+</style>
+
+<style type="text/css">
+
+input.test1 {
+  left: 981px;
+  top: 405px;
+  
+}
+</style>
+
+
+
+</head>
+
+<body vlink="#FFFFDD" alink="#FFFFDD" bgcolor="#FFFFDD" link="#FFFFDD" background="imag/fun.jpg" >
+
+
+
+<table style="border-collapse: collapse;" align="center" border="1" bordercolor="BLACK" cellpadding="0" cellspacing="0" height="125" width="1000">
+  <tbody ><tr>
+    <td background="imag/banner2.jpg"  height="90"><div align="center">
+        <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+          <tbody><tr >
+
+<form name="Cabecalho">
+  <table border="0" width="100%">
+    <tr>
+     <td width="70%" align="center"><font color="#808000"><big><big><big><big><big></big></big></big></big></big></font></td>
+      <td width="15%" align="center"><div align="center"><center><p><input class="btn btn-blue"  type="button" value="Jogar" onClick="InicializaFormulario();"></td>
+    </tr>
+  </table>
+  
+  
+  </tr>
+        </tbody></table>
+		
+		 </div></td>
+  </tr>
+</tbody></table>
+
+
+  
+  <table style="border-collapse: collapse;" align="center" border="1"  bordercolor="BLACK" cellpadding="0" cellspacing="0" height="30" width="1000"><div align="center" ID="Formulario" Style="display=block">
+    <tr>
+
+      <td background="imag/b.png"><div align="center"><center><p>  Nome <input type="text" name="Nome" size="10" value="Jogador 1"></p></td>
+     <td background="imag/b2.png"><center></div><div align="center"><center><p><big><big><strong>Nivel</strong></big></big></p>
+      </center></div></td><td background="imag/b.png"><div align="center"><center><p><input type="radio" value="1" checked name="Nivel">Fácil</p>
+      </center></div></td><td background="imag/b.png"><div align="center"><center><p><input type="radio" name="Nivel" value="2">Médio</p>
+      </center></div></td><td background="imag/b.png"><div align="center"><center><p><input type="radio" name="Nivel" value="3">Dificil
+      </td>
+    </tr>
+  </table>
+  </div>
+</form>
+
+
+<table style="border-collapse: collapse;" align="center" border="1" bordercolor="BLACK" cellpadding="0" cellspacing="0" height="500" width="718" >
+  <tbody><tr>
+    <td background="imag/planoC.jpg" width="500" height="500"><div align="center" >
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr>
+
+<form name="Tabuleiro">
+  <div  ID="Jogo" Style="display=none">
+  <table cellspacing="0" cellpadding="0" height="350" width="1000" border="0">
+    <tr>
+      <td width="70" rowspan="2"><div align="center"><center><p><script>document.write(Nome2);</script><img src="imag/Circulo1.png" WIDTH="80" HEIGHT="80"></td>
+       <td width="74" align="center"><div align="center"><center><p><input type="text"  name="Txt_PedrasComp" id= "teste" class="test" size="1" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco12" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco11" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco10" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco9" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco8" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco7" size="5" readonly style="text-align: center"></td>
+      <td width="76" align="center"></td>
+    </tr>
+    <tr align="center">
+      <td width="74" rowspan="2" ><img  src="imag/025.png" width="85" height="100"onMouseDown="Mensagem(3);"></td>
+      <td width="75" align="center"><img src="imag/0.png" onMouseDown="JogaJogador(12)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(11)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(10)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(9)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(8)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(7)" WIDTH="85" HEIGHT="85"></td>
+      <td width="76" rowspan="2" ><img src="imag/025.png" width="85" height="100"onMouseDown="Mensagem(3);"></td>
+    </tr>
+    <tr align="center">
+      <td width="85" rowspan="2"><div align="center"><div align="center"><center><p><img src="imag/seta.png" WIDTH="80" HEIGHT="80"></p>
+      </center></div><div align="center"><center><p><input type="text" name="Txt_AuxiliarJog1" size="12" readonly style="text-align: center"></p>
+      </center></div></div></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(1)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(2)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(3)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(4)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(5)" WIDTH="85" HEIGHT="85"></td>
+      <td width="75" align="center" ><img src="imag/0.png" onMouseDown="JogaJogador(6)" WIDTH="85" HEIGHT="85"></td>
+    </tr>
+    <tr align="center">
+      <td width="74"></td>
+      <td width="75" align="center" ><input type="text" name="Txt_Buraco1" size="5" readonly style="text-align: center" ></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco2" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco3" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco4" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco5" size="5" readonly style="text-align: center"></td>
+      <td width="75" align="center"><input type="text" name="Txt_Buraco6" size="5" readonly style="text-align: center"></td>
+       <td width="76" align="center"><input type="text" name="Txt_PedrasJogador"   id= "teste1" class="test1" size="1" readonly style="text-align: center" color= "white"></td>
+    </tr>
+  </table>
+  </center></div></div>
+</form>
+<div align="center" ID="Mail" Style="display=block"><div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%"></td>
+  </tr>
+  </table>
+</center></div></div>
+
+<script type="text/javascript" src="Js/script_orilcpu - copia.js"></script>
+<script type="text/javascript">	
+	<!--Variáveirs globais-->
+var Nome1;				/*colocação dos nomes dos jogadores*/
+var Nome2;
+Nome2="Computador";
+<font color= "white">  Nome </font>
+</script>
+
+</tr>
+        </tbody></table>
+		
+		 </div></td>
+  </tr>
+</tbody></table>
+
+<!--COMENT-->
+<table>
+<td><p align="center"><tr>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.5&appId=843844912395308";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-comments" data-href="http://oril.inforwebsal.com" data-numposts="5"></div>
+</tr></td>
+</table>
+
+</body>
+</html>
